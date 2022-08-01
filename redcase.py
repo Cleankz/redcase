@@ -3,9 +3,9 @@ def TheRabbitsFoot(str,encode):
     list_str = list(no_sp_str)
     words = []
     len_of_str = len(no_sp_str)
-    m_size = len_of_str**0.5
-    columns= (m_size *10) //10 # число строк
-    rows = ((m_size * 10) % 10) // 1 # число столбцов
+    m_size = round(len_of_str**0.5)
+    columns= float(m_size *10) //10 # число строк
+    rows = float((m_size * 10) % 10) // 1 # число столбцов
     for i in range(len_of_str - int((rows*columns))):
         if rows * columns < len_of_str:
             columns = columns + 1
