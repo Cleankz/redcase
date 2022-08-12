@@ -9,7 +9,7 @@ def TheRabbitsFoot(str,encode):
     for i in range(len_of_str - int((rows*columns))):
         if rows * columns < len_of_str:
             columns = columns + 1
-    if encode is True:
+    if encode is True: # 
         for i in range(len(list_str)):
             if len(list_str) !=0:
                 st= ''
